@@ -14,124 +14,177 @@ import viewStyle from 'theme/component/ViewStyle';
 import GeneralStatusBarColor from 'statusbarstyle/GeneralStatusBarColor';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Dashboard = ({navigation, props}) => {
-  useEffect(() => {}, []);
-  //================================ Start common Function ===========================================
+  const [visible, setVisible] = useState(false);
+  const [points, setPoints] = useState(0);
+  const [latte, setLatte] = useState(0);
 
-  return (
-    <Fragment>
-      <View style={[viewStyle.flex, viewStyle.flexbgColor]}>
-        <GeneralStatusBarColor
-          backgroundColor={Colors.lightgray}
-          barStyle={'dark-content'}
-        />
-        <View style={styles.body}>
-          <View style={[styles.card, {backgroundColor: '#cab09d'}]}>
-            <View
-              style={{
-                flex: 2,
-                justifyContent: 'center',
-                marginLeft: 15,
-              }}>
+  const getPoints = async () => {
+    try {
+      const value = await AsyncStorage.getItem('POINTS');
+      if (value !== null) {
+        return parseInt(value);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const getLatte = async () => {
+    try {
+      const value = await AsyncStorage.getItem('LATTE');
+      if (value !== null) {
+        return parseInt(value);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  useEffect(() => {
+    const f = async () => {
+      const bar = await getLatte();
+      const foo = await getPoints();
+      if (bar !== null && foo !== null) {
+        setVisible(true);
+
+        setLatte(bar);
+        setPoints(foo);
+      }
+    };
+    f();
+  }, []);
+
+  //================================ Start common Function ===========================================
+  if (visible) {
+    return (
+      <Fragment>
+        <View style={[viewStyle.flex, viewStyle.flexbgColor]}>
+          <GeneralStatusBarColor
+            backgroundColor={Colors.lightgray}
+            barStyle={'dark-content'}
+          />
+          <View style={styles.body}>
+            <View style={[styles.card, {backgroundColor: '#cab09d'}]}>
               <View
                 style={{
-                  flex: 1,
-                  justifyContent: 'space-between',
-                  paddingHorizontal: 5,
-                  flexDirection: 'row',
-                  alignItems: 'flex-end',
-                  marginTop: 10,
-                  width: '90%',
+                  flex: 2,
+                  justifyContent: 'center',
+                  marginLeft: 15,
                 }}>
-                <View style={styles.imageContainer}>
-                  <Feather name="coffee" size={50} color={'#94553a'} />
+                <View
+                  style={{
+                    flex: 1,
+                    justifyContent: 'space-between',
+                    paddingHorizontal: 5,
+                    flexDirection: 'row',
+                    alignItems: 'flex-end',
+                    marginTop: 10,
+                    width: '90%',
+                  }}>
+                  <View style={styles.imageContainer}>
+                    <Feather name="coffee" size={50} color={'#94553a'} />
+                  </View>
+                  <Text style={styles.number}>
+                    {points}
+                    <Text style={{fontSize: 22}}> / </Text>150
+                  </Text>
                 </View>
-                <Text style={styles.number}>
-                  40<Text style={{fontSize: 22}}> / </Text>150
-                </Text>
+                <View style={{flex: 1, alignItems: 'center'}}>
+                  <Text style={styles.textStyle}>
+                    Besplatna kafa te čeka! Skeniraj QR kod na šolji.
+                  </Text>
+                </View>
               </View>
-              <View style={{flex: 1, alignItems: 'center'}}>
-                <Text style={styles.textStyle}>
-                  Besplatna kafa te čeka! Skeniraj QR kod na šolji.
-                </Text>
-              </View>
-            </View>
-            <View
-              style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-              <Text style={styles.percentage}>
-                25<Text style={{fontSize: 20}}>%</Text>
-              </Text>
-            </View>
-          </View>
-
-          <View
-            style={[
-              styles.card,
-              {backgroundColor: '#94553a', marginBottom: 0},
-            ]}>
-            <View
-              style={{
-                flex: 2,
-                justifyContent: 'center',
-                marginLeft: 15,
-              }}>
               <View
                 style={{
                   flex: 1,
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}>
-                <Text style={styles.titleStyle}>Sedmični izazov:</Text>
-                <Text style={styles.subtitleStyle}>Skeniraj 3 Latte-a</Text>
+                <Text style={styles.percentage}>
+                  25<Text style={{fontSize: 20}}>%</Text>
+                </Text>
+              </View>
+            </View>
+
+            <View
+              style={[
+                styles.card,
+                {backgroundColor: '#94553a', marginBottom: 0},
+              ]}>
+              <View
+                style={{
+                  flex: 2,
+                  justifyContent: 'center',
+                  marginLeft: 15,
+                }}>
+                <View
+                  style={{
+                    flex: 1,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Text style={styles.titleStyle}>Sedmični izazov:</Text>
+                  <Text style={styles.subtitleStyle}>Skeniraj 3 Latte-a</Text>
+                </View>
+                <View
+                  style={{
+                    flex: 1,
+                    justifyContent: 'flex-start',
+                    width: '80%',
+                    paddingHorizontal: 5,
+                    flexDirection: 'row',
+                    marginBottom: 10,
+                  }}>
+                  <View style={[styles.imageContainer]}>
+                    <Ionicon name="timer" size={50} color={'#cab09d'} />
+                  </View>
+                  <Text style={styles.number}>
+                    {latte}
+                    <Text style={{fontSize: 22}}> / </Text>3
+                  </Text>
+                </View>
               </View>
               <View
                 style={{
                   flex: 1,
-                  justifyContent: 'flex-start',
-                  width: '80%',
-                  paddingHorizontal: 5,
-                  flexDirection: 'row',
-                  marginBottom: 10,
+                  alignItems: 'center',
+                  justifyContent: 'center',
                 }}>
-                <View style={[styles.imageContainer]}>
-                  <Ionicon name="timer" size={50} color={'#cab09d'} />
-                </View>
-                <Text style={styles.number}>
-                  1<Text style={{fontSize: 22}}> / </Text>3
+                <Text
+                  style={[
+                    styles.percentage,
+                    {
+                      backgroundColor: '#cab09d',
+                      color: '#94553a',
+                    },
+                  ]}>
+                  33<Text style={{fontSize: 20}}>%</Text>
                 </Text>
               </View>
             </View>
-            <View
-              style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-              <Text
-                style={[
-                  styles.percentage,
-                  {
-                    backgroundColor: '#cab09d',
-                    color: '#94553a',
-                  },
-                ]}>
-                33<Text style={{fontSize: 20}}>%</Text>
+            <View style={styles.reward}>
+              <Text style={styles.textStyle}>
+                Nagrada:{' '}
+                <Text style={{color: '#555555'}}>Kupon za besplatan Latte</Text>
               </Text>
             </View>
-          </View>
-          <View style={styles.reward}>
-            <Text style={styles.textStyle}>
-              Nagrada:{' '}
-              <Text style={{color: '#555555'}}>Kupon za besplatan Latte</Text>
-            </Text>
-          </View>
 
-          <View
-            style={[
-              styles.card,
-              {backgroundColor: '#7cc269', height: '40%'},
-            ]}></View>
+            <View
+              style={[
+                styles.card,
+                {backgroundColor: '#7cc269', height: '40%'},
+              ]}></View>
+          </View>
         </View>
-      </View>
-    </Fragment>
-  );
+      </Fragment>
+    );
+  } else {
+    return <View />;
+  }
 };
 
 const select = (store) => {
