@@ -23,10 +23,14 @@ import homestyle from 'theme/component/HomeStyle';
 import {RNCamera} from 'react-native-camera';
 
 const Notification = ({navigation, props}) => {
+  let timer1;
   const barcodeRecognized = ({barcodes}) => {
     barcodes.forEach((barcode) =>
       barcode.data[0] !== '{'
-        ? navigation.navigate('Dashboard')
+        ? (timer1 = setTimeout(() => {
+            navigation.navigate('Dashboard');
+            clearTimeout(timer1);
+          }, 500))
         : console.log('Kod nije prepoznat'),
     );
   };
@@ -48,6 +52,9 @@ const Notification = ({navigation, props}) => {
           }}
           onGoogleVisionBarcodesDetected={barcodeRecognized}
         />
+        <View style={styles.overlay}>
+          <View style={styles.object} />
+        </View>
       </View>
     </Fragment>
   );
@@ -58,4 +65,20 @@ const select = (store) => {
 };
 export default connect(select)(Notification);
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  overlay: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  object: {
+    width: '60%',
+    aspectRatio: 1,
+    borderWidth: 5,
+    borderRadius: 15,
+    borderColor: '#a2e98e',
+    borderStyle: 'dashed',
+  },
+});
