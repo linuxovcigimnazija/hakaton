@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {Fragment, useEffect} from 'react';
 import {
   View,
@@ -19,8 +20,17 @@ import notificationStyle from 'theme/component/NotificationStyle';
 import GeneralStatusBarColor from 'statusbarstyle/GeneralStatusBarColor';
 import {RLHeader, RLText, RLButton, RLNotificationList} from 'basecomponent';
 import homestyle from 'theme/component/HomeStyle';
+import {RNCamera} from 'react-native-camera';
 
 const Notification = ({navigation, props}) => {
+  const barcodeRecognized = ({barcodes}) => {
+    barcodes.forEach((barcode) =>
+      barcode.data[0] !== '{'
+        ? navigation.navigate('Dashboard')
+        : console.log('Kod nije prepoznat'),
+    );
+  };
+
   return (
     <Fragment>
       <View style={[viewStyle.flex, viewStyle.flexbgColor]}>
@@ -28,7 +38,16 @@ const Notification = ({navigation, props}) => {
           backgroundColor={Colors.white}
           barStyle={'dark-content'}
         />
-        <Text>dsdaskh</Text>
+        <RNCamera
+          // ref={(ref) => {
+          //   this.camera = ref;
+          // }}
+          style={{
+            flex: 1,
+            width: '100%',
+          }}
+          onGoogleVisionBarcodesDetected={barcodeRecognized}
+        />
       </View>
     </Fragment>
   );

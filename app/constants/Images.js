@@ -3,7 +3,7 @@ const Images = {
   //App Intro
   exoressDelivery: require('assets/IntroIcon/exoressDelivery.png'),
   produk: require('assets/IntroIcon/produk.png'),
-  shoppingHome: require('assets/IntroIcon/shoppingHome.png'),
+  shoppingHome: require('assets/added/slider1-1.png'),
 
   //Comman
   previousArrowWhite: require('assets/CommonIcon/previousArrowWhite.png'),

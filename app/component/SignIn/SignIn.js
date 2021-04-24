@@ -39,7 +39,7 @@ const SignIn = ({navigation, props}) => {
       <RLHeader
         SimpleHeader={true}
         showrightsimple={true}
-        textrightSimple={BaseText.Sign_Up}
+        textrightSimple={'REGISTRUJ SE'}
         onPressrightSimple={() => navigation.navigate('SignUp')}
       />
     );
@@ -49,9 +49,9 @@ const SignIn = ({navigation, props}) => {
   const _renderHeader = () => {
     return (
       <RLHeaderSignIn
-        title={BaseText.SignIn}
-        title1={BaseText.SignInHeaderTitle1}
-        title2={BaseText.SignInHeaderTitle2}
+        title={'Uloguj se'}
+        title1={'Unesi podatke profila ili napravi novi nalog'}
+        title2={''}
       />
     );
   };
@@ -70,7 +70,7 @@ const SignIn = ({navigation, props}) => {
           ]}>
           <RLTextInput
             PlainTextInput={true}
-            placeholder={BaseText.Youremail}
+            placeholder={'Unesi email'}
             placeholderTextColor={Colors.gray}
             onEditTextField={(value) => _onChangeTextField(value, 'userName')}
             onSubmitEditing={() => _onSubmitEditing(fieldPasswordRef)}
@@ -83,7 +83,7 @@ const SignIn = ({navigation, props}) => {
           <RLTextInput
             PasswordTextInput={true}
             hideShowImage={Images.hidePassword}
-            placeholder={BaseText.Yourpassword}
+            placeholder={'Unesi šifru'}
             placeholderTextColor={Colors.gray}
             secureTextEntry={true}
             onEditTextField={(value) => _onChangeTextField(value, 'userName')}
@@ -102,13 +102,13 @@ const SignIn = ({navigation, props}) => {
       <RLButton
         SimpleButton={true}
         onpress={() => navigation.navigate('Dashboard')}
-        simplebuttontext={BaseText.Sign_IN}
+        simplebuttontext={'ULOGUJ SE'}
         simplebuttontextStyle={buttonStyle.buttonTextStyle}
         simplebuttonStyle={[
           buttonStyle.commonbuttonStyle,
           {
             width: (BaseStyle.DEVICE_WIDTH / 100) * 85,
-            backgroundColor: Colors.activebtn,
+            backgroundColor: '#cab09d',
           },
         ]}
       />
@@ -119,7 +119,7 @@ const SignIn = ({navigation, props}) => {
   const _renderForgetText = () => {
     return (
       <RLText
-        text={BaseText.Forgotpassword}
+        text={'Zaboravljena šifra?'}
         style={[textStyle.textWidthStyle, textStyle.forgettextStyle]}
         onPress={() => navigation.navigate('ForgotPassword')}
       />
@@ -133,7 +133,7 @@ const SignIn = ({navigation, props}) => {
         <RLButton
           ImageButton={true}
           image={Images.google}
-          simplebuttontext={BaseText.ContinueGoogle}
+          simplebuttontext={'NASTAVI UZ GOOGLE'}
           simplebuttontextStyle={[
             buttonStyle.imgbtnTextStyle,
             {color: Colors.darkGray},
@@ -149,7 +149,7 @@ const SignIn = ({navigation, props}) => {
         <RLButton
           ImageButton={true}
           image={Images.facebook}
-          simplebuttontext={BaseText.ContinueFacebook}
+          simplebuttontext={'NASTAVI UZ FACEBOOK'}
           simplebuttontextStyle={[
             buttonStyle.imgbtnTextStyle,
             {color: Colors.white},
@@ -158,7 +158,7 @@ const SignIn = ({navigation, props}) => {
             buttonStyle.imgbuttonStyle,
             {
               width: (BaseStyle.DEVICE_WIDTH / 100) * 85,
-              backgroundColor: Colors.blue,
+              backgroundColor: '#72bcd4',
               marginTop: (BaseStyle.DEVICE_HEIGHT / 100) * 2,
             },
           ]}
@@ -171,7 +171,7 @@ const SignIn = ({navigation, props}) => {
   const _renderSocialText = () => {
     return (
       <RLText
-        text={BaseText.OrSign}
+        text={'Nastavi putem socijalnih mreža'}
         style={[textStyle.socailTextStyle, textStyle.textWidthStyle]}
       />
     );
@@ -181,7 +181,7 @@ const SignIn = ({navigation, props}) => {
     <Fragment>
       <View style={[viewStyle.flex, viewStyle.flexbgColor]}>
         <GeneralStatusBarColor
-          backgroundColor={Colors.lightBlue}
+          backgroundColor={'#94553a'}
           barStyle={'light-content'}
         />
         {_header()}

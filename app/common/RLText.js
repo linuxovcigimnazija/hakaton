@@ -1,18 +1,12 @@
-import React from "react";
-import { Text } from "react-native";
+import React from 'react';
+import {Text} from 'react-native';
 
 const RLText = (props) => {
-
-  const {
-    style,
-    onPress,
-    RlnumberOfLines,
-    key,
-    text
-  } = props;
+  const {style, onPress, RlnumberOfLines, key, text} = props;
 
   return (
-    <Text style={style}
+    <Text
+      style={style}
       onPress={onPress}
       numberOfLines={RlnumberOfLines}
       key={key}>
