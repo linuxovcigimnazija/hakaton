@@ -88,7 +88,7 @@ const Dashboard = ({navigation, props}) => {
                     <Feather name="coffee" size={50} color={'#94553a'} />
                   </View>
                   <Text style={styles.number}>
-                    {points}
+                    {points - Math.floor(points / 150) * 150}
                     <Text style={{fontSize: 22}}> / </Text>150
                   </Text>
                 </View>
@@ -143,7 +143,7 @@ const Dashboard = ({navigation, props}) => {
                     <Ionicon name="timer" size={50} color={'#cab09d'} />
                   </View>
                   <Text style={styles.number}>
-                    {latte}
+                    {latte - Math.floor(latte / 3) * 3}
                     <Text style={{fontSize: 22}}> / </Text>3
                   </Text>
                 </View>
