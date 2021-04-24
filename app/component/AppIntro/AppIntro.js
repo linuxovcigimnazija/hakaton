@@ -78,32 +78,38 @@ const AppIntro = ({navigation, props}) => {
             </View>
 
             <View key="2" style={appIntroStyle.paggerViewStyle}>
-              <Image source={Images.produk} style={appIntroStyle.logoStyle} />
+              <Image
+                source={require('assets/added/jpg_2.jpg')}
+                style={appIntroStyle.logoStyle}
+              />
 
               <RLText
-                text={BaseText.ShoppingHome}
+                text={'Isprati ritam!'}
                 style={appIntroStyle.titleTextStyle}
               />
 
               <RLText
-                text={BaseText.IntroDetails}
+                text={`Koliko si kapućina popio ove sedmice?
+Koju kafu nisi isprobao, a koju najčešće kupuješ? Da li si ti "Espresso radoholicar" ili "početnik u ispijanju kafe"? Saznaj.`}
                 style={appIntroStyle.introdetailStyle}
               />
             </View>
 
             <View key="3" style={appIntroStyle.paggerViewStyle}>
               <Image
-                source={Images.exoressDelivery}
+                source={require('assets/added/jpg_3.jpg')}
                 style={appIntroStyle.logoStyle}
               />
 
               <RLText
-                text={BaseText.ShoppingHome}
+                text={'Zabavi se!'}
                 style={appIntroStyle.titleTextStyle}
               />
 
               <RLText
-                text={BaseText.IntroDetails}
+                text={
+                  'Ispunjavaj razne sedmične izazove za kafoljupce i takmiči se u sakupljanju bedževa sa svojim prijateljima.'
+                }
                 style={appIntroStyle.introdetailStyle}
               />
             </View>

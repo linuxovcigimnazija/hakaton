@@ -53,7 +53,46 @@ const Notification = ({navigation, props}) => {
           onGoogleVisionBarcodesDetected={barcodeRecognized}
         />
         <View style={styles.overlay}>
+          <Text
+            style={{
+              fontSize: 20,
+              color: 'white',
+              fontWeight: 'bold',
+              marginBottom: 5,
+              fontFamily: 'Quicksand-Bold',
+            }}>
+            Skeniraj QR kod:
+          </Text>
           <View style={styles.object} />
+          <Image
+            style={[styles.image, {top: 50, right: 50}]}
+            resizeMode="contain"
+            source={require('assets/added/zrno1.png')}
+          />
+
+          <Image
+            style={[styles.image, {bottom: 40, left: 160}]}
+            resizeMode="contain"
+            source={require('assets/added/zrno2.png')}
+          />
+
+          <Image
+            style={[styles.image, {left: 10, top: 500}]}
+            resizeMode="contain"
+            source={require('assets/added/zrno3.png')}
+          />
+
+          <Image
+            style={[styles.image, {top: 60, left: 50, width: 100}]}
+            resizeMode="contain"
+            source={require('assets/added/list1.png')}
+          />
+
+          <Image
+            style={[styles.image, {bottom: 30, right: 20}]}
+            resizeMode="contain"
+            source={require('assets/added/list2.png')}
+          />
         </View>
       </View>
     </Fragment>
@@ -80,5 +119,9 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     borderColor: '#a2e98e',
     borderStyle: 'dashed',
+  },
+  image: {
+    position: 'absolute',
+    width: 75,
   },
 });

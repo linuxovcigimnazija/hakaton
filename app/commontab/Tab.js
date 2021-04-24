@@ -1,29 +1,36 @@
 //Custom Tab Icon File
 import React from 'react';
 import {TouchableOpacity, Image, StyleSheet, Text, View} from 'react-native';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-const Tab = ({tab, icon, onPress, color, key, index, profileBcolor}) => {
-  if (index == 2) {
-    return (
-      <TouchableOpacity onPress={onPress} style={[styles.btnStyle]}>
-        <View style={[styles.profileViewStyle, {borderColor: profileBcolor}]}>
-          {icon && (
-            <Image
-              source={icon}
-              style={[styles.imgStyle, {borderRadius: 25 / 2}]}
-            />
-          )}
-        </View>
-      </TouchableOpacity>
-    );
-  } else {
-    return (
-      <TouchableOpacity onPress={onPress} style={styles.btnStyle}>
-        {icon && <Image source={icon} style={styles.imgStyle} />}
-        {/* <Text style={{ color }}>{tab.name}</Text> */}
-      </TouchableOpacity>
-    );
-  }
+const Tab = ({
+  tab,
+  icon,
+  onPress,
+  color,
+  key,
+  index,
+  profileBcolor,
+  selected,
+}) => {
+  let iconName =
+    selected === 'Dashboard'
+      ? 'coffee'
+      : selected === 'Notification'
+      ? 'qrcode'
+      : 'user';
+
+  return (
+    <TouchableOpacity onPress={onPress} style={styles.btnStyle}>
+      {icon && (
+        <FontAwesome
+          name={iconName}
+          size={26}
+          color={selected ? '#94553a' : '#cab09d'}
+        />
+      )}
+    </TouchableOpacity>
+  );
 };
 
 const styles = StyleSheet.create({

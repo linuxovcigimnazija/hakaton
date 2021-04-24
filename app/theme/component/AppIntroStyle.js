@@ -26,7 +26,7 @@ const appIntroStyle = StyleSheet.create({
     height: 230,
   },
   titleTextStyle: {
-    fontSize: 18,
+    fontSize: 22,
     color: Colors.darkGray,
     marginVertical: (BaseStyle.DEVICE_HEIGHT / 100) * 5,
     alignSelf: 'center',
@@ -36,7 +36,7 @@ const appIntroStyle = StyleSheet.create({
     marginBottom: (BaseStyle.DEVICE_HEIGHT / 100) * 4,
     alignSelf: 'center',
     color: Colors.gray,
-    fontSize: 12,
+    fontSize: 16,
     width: (BaseStyle.DEVICE_WIDTH / 100) * 50,
     textAlign: 'center',
     lineHeight: 20,

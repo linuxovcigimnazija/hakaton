@@ -48,6 +48,7 @@ const CustomTab = ({navigation, state}) => {
           <View style={styles.centerTab}>
             {routes.map((route, index) => (
               <Tab
+                selected={route.name}
                 tab={route}
                 icon={
                   route.name === selected
