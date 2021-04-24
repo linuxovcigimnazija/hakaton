@@ -12,6 +12,7 @@ import {connect} from 'react-redux';
 import BaseText from 'constants/BaseText';
 import BaseStyle from 'constants/BaseStyle';
 import Colors from 'constants/Colors';
+import {RNCamera} from 'react-native-camera';
 import Images from 'constants/Images';
 import viewStyle from 'theme/component/ViewStyle';
 import buttonStyle from 'theme/component/ButtonStyle';
@@ -21,6 +22,10 @@ import {RLHeader, RLText, RLButton, RLNotificationList} from 'basecomponent';
 import homestyle from 'theme/component/HomeStyle';
 
 const Notification = ({navigation, props}) => {
+  barcodeRecognized = ({barcodes}) => {
+    barcodes.forEach((barcode) => console.warn(barcode.data));
+  };
+
   return (
     <Fragment>
       <View style={[viewStyle.flex, viewStyle.flexbgColor]}>
@@ -29,6 +34,15 @@ const Notification = ({navigation, props}) => {
           barStyle={'dark-content'}
         />
         <Text>dsdaskh</Text>
+        <RNCamera
+          ref={(ref) => {
+            this.camera = ref;
+          }}
+          style={{
+            flex: 1,
+            width: '100%',
+          }}
+          onGoogleVisionBarcodesDetected={this.barcodeRecognized}></RNCamera>
       </View>
     </Fragment>
   );
