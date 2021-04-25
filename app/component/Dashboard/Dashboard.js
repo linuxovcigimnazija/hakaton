@@ -163,7 +163,7 @@ const Dashboard = ({navigation, props}) => {
                       color: '#94553a',
                     },
                   ]}>
-                  {latte / 0.03}
+                  {Math.floor(latte / 0.03)}
                   <Text style={{fontSize: 20}}>%</Text>
                 </Text>
               </View>
