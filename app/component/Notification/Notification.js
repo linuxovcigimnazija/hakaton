@@ -43,9 +43,6 @@ const Notification = ({navigation, props}) => {
           barStyle={'dark-content'}
         />
         <RNCamera
-          // ref={(ref) => {
-          //   this.camera = ref;
-          // }}
           style={{
             flex: 1,
             width: '100%',

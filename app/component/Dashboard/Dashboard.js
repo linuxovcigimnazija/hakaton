@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   Modal,
   TouchableWithoutFeedback,
+  TouchableHighlight,
 } from 'react-native';
 import {connect} from 'react-redux';
 import Colors from 'constants/Colors';
@@ -19,7 +20,16 @@ import Ionicon from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-const Dashboard = ({navigation, props}) => {
+const LATTES = 3;
+const max = 3;
+const percentage = ((LATTES / max) * 100).toFixed();
+const couponEnabled = LATTES >= max ? true : false;
+
+const points = 40;
+const maxPoints = 150;
+const pointPercentage = ((points / maxPoints) * 100).toFixed();
+
+const Dashboard = ({navigation, props, route}) => {
   const timeRemaining = 7100;
   const [timeDiff, setTimeDiff] = useState(0);
   const currentTime = new Date();
@@ -36,6 +46,7 @@ const Dashboard = ({navigation, props}) => {
   let displaySecond = seconds < 10 ? '0' + seconds : seconds;
 
   const [modalVisible, setModalVisible] = useState(false);
+  const [weeklyModalVisible, setWeeklyModalVisible] = useState(false);
 
   const onCouponPress = () => {
     setModalVisible(true);
@@ -88,7 +99,9 @@ const Dashboard = ({navigation, props}) => {
                       <Feather name="coffee" size={50} color={'#94553a'} />
                     </View>
                     <Text style={styles.number}>
-                      40<Text style={{fontSize: 22}}> / </Text>150
+                      {points}
+                      <Text style={{fontSize: 22}}> / </Text>
+                      {maxPoints}
                     </Text>
                   </View>
                   <View style={{flex: 1, alignItems: 'center'}}>
@@ -104,66 +117,78 @@ const Dashboard = ({navigation, props}) => {
                     justifyContent: 'center',
                   }}>
                   <Text style={styles.percentage}>
-                    27<Text style={{fontSize: 20}}>%</Text>
+                    {pointPercentage}
+                    <Text style={{fontSize: 20}}>%</Text>
                   </Text>
                 </View>
               </View>
 
-              <View
+              <TouchableHighlight
+                activeOpacity={0.9}
+                underlayColor="black"
+                disabled={couponEnabled}
+                onPress={() => setWeeklyModalVisible(true)}
                 style={[
                   styles.card,
-                  {backgroundColor: '#94553a', marginBottom: 0},
+                  {backgroundColor: '#94553a', marginBottom: 0, zIndex: 10},
                 ]}>
-                <View
-                  style={{
-                    flex: 2,
-                    justifyContent: 'center',
-                    marginLeft: 15,
-                  }}>
+                <View style={{flexDirection: 'row', flex: 1}}>
+                  <View
+                    style={{
+                      flex: 2,
+                      justifyContent: 'center',
+                      marginLeft: 15,
+                    }}>
+                    <View
+                      style={{
+                        flex: 1,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}>
+                      <Text style={styles.titleStyle}>Sedmični izazov:</Text>
+                      <Text style={styles.subtitleStyle}>
+                        Skeniraj 3 Latte-a
+                      </Text>
+                    </View>
+                    <View
+                      style={{
+                        flex: 1,
+                        justifyContent: 'flex-start',
+                        width: '80%',
+                        paddingHorizontal: 5,
+                        flexDirection: 'row',
+                        marginBottom: 10,
+                      }}>
+                      <View style={[styles.imageContainer]}>
+                        <Ionicon name="timer" size={50} color={'#cab09d'} />
+                      </View>
+                      <Text style={styles.number}>
+                        {LATTES}
+                        <Text style={{fontSize: 22}}> / </Text>
+                        {max}
+                      </Text>
+                    </View>
+                  </View>
                   <View
                     style={{
                       flex: 1,
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
-                    <Text style={styles.titleStyle}>Sedmični izazov:</Text>
-                    <Text style={styles.subtitleStyle}>Skeniraj 3 Latte-a</Text>
-                  </View>
-                  <View
-                    style={{
-                      flex: 1,
-                      justifyContent: 'flex-start',
-                      width: '80%',
-                      paddingHorizontal: 5,
-                      flexDirection: 'row',
-                      marginBottom: 10,
-                    }}>
-                    <View style={[styles.imageContainer]}>
-                      <Ionicon name="timer" size={50} color={'#cab09d'} />
-                    </View>
-                    <Text style={styles.number}>
-                      1<Text style={{fontSize: 22}}> / </Text>3
+                    <Text
+                      style={[
+                        styles.percentage,
+                        {
+                          backgroundColor: '#cab09d',
+                          color: '#94553a',
+                        },
+                      ]}>
+                      {percentage}
+                      <Text style={{fontSize: 20}}>%</Text>
                     </Text>
                   </View>
                 </View>
-                <View
-                  style={{
-                    flex: 1,
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}>
-                  <Text
-                    style={[
-                      styles.percentage,
-                      {
-                        backgroundColor: '#cab09d',
-                        color: '#94553a',
-                      },
-                    ]}>
-                    33<Text style={{fontSize: 20}}>%</Text>
-                  </Text>
-                </View>
-              </View>
+              </TouchableHighlight>
               <View style={styles.reward}>
                 <Text style={styles.textStyle}>
                   Nagrada:{' '}
@@ -304,6 +329,52 @@ const Dashboard = ({navigation, props}) => {
                   fontFamily: 'Nunito-Bold',
                 }}>
                 Skeniraj ovaj kod na kasi:
+              </Text>
+              <Image
+                source={require('assets/added/Coffee.png')}
+                style={{width: 285, height: 285, borderRadius: 15}}
+              />
+            </View>
+          </View>
+        </TouchableWithoutFeedback>
+      </Modal>
+
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={weeklyModalVisible}
+        onRequestClose={() => {
+          setWeeklyModalVisible(!weeklyModalVisible);
+        }}>
+        <TouchableWithoutFeedback
+          onPress={() => setWeeklyModalVisible(!weeklyModalVisible)}>
+          <View
+            style={{
+              flex: 1,
+              backgroundColor: '#00000055',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+            <View
+              style={{
+                width: '80%',
+                aspectRatio: 0.92,
+                backgroundColor: '#94553a',
+                borderRadius: 15,
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                padding: 15,
+                paddingTop: 5,
+              }}>
+              <Text
+                style={{
+                  color: 'white',
+                  alignSelf: 'center',
+                  fontSize: 21,
+                  marginBottom: 5,
+                  fontFamily: 'Nunito-Bold',
+                }}>
+                Besplatan Latte te čeka!
               </Text>
               <Image
                 source={require('assets/added/Coffee.png')}
