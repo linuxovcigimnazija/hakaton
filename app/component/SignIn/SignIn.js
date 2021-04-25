@@ -49,7 +49,7 @@ const SignIn = ({navigation, props}) => {
   const _renderHeader = () => {
     return (
       <RLHeaderSignIn
-        title={'Uloguj se'}
+        title={'Prijavi se'}
         title1={'Unesi podatke profila ili napravi novi nalog'}
         title2={''}
       />

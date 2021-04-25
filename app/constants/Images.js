@@ -3,7 +3,7 @@ const Images = {
   //App Intro
   exoressDelivery: require('assets/IntroIcon/exoressDelivery.png'),
   produk: require('assets/IntroIcon/produk.png'),
-  shoppingHome: require('assets/added/slider1-1.png'),
+  shoppingHome: require('assets/IntroIcon/shoppingHome.png'),
 
   //Comman
   previousArrowWhite: require('assets/CommonIcon/previousArrowWhite.png'),
@@ -31,7 +31,8 @@ const Images = {
   deActiveNotification: require('assets/TabIcon/deActiveNotification.png'),
   activeProfile: require('assets/TabIcon/activeProfile.png'),
   deActiveProfile: require('assets/TabIcon/deActiveProfile.png'),
-  tabUserprofile: require('assets/TabIcon/tabUserprofile.png'),
+  tabUserprofile: require('assets/TabIcon/icon_profile.png'),
+  trophy: require('assets/TabIcon/trophy4.png'),
 
   //Dashboard
   women: require('assets/Dashboard/women.png'),
@@ -62,7 +63,11 @@ const Images = {
   address: require('assets/ProfileIcon/address.png'),
   favourites: require('assets/ProfileIcon/favourites.png'),
   account: require('assets/ProfileIcon/account.png'),
-  profileCover: require('assets/ProfileIcon/profileCover.png'),
+  profileCover: require('assets/ProfileIcon/blackprofile_background.jpeg'),
+  kapucino: require('assets/ProfileIcon/kapucino.png'),
+  makijato: require('assets/ProfileIcon/makijato.png'),
+  espreso: require('assets/ProfileIcon/espreso.png'),
+  frape: require('assets/ProfileIcon/frape.png'),
 
   //Check Box
   checkbox: require('assets/CheckOut/checkbox.png'),
