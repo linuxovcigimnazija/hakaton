@@ -17,6 +17,8 @@ import org.reactnative.maskedview.RNCMaskedViewPackage;
 import com.reactnativecommunity.viewpager.RNCViewPagerPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
+// react-native-fast-image
+import com.dylanvann.fastimage.FastImageViewPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-permissions
@@ -77,6 +79,7 @@ public class PackageList {
       new RNCMaskedViewPackage(),
       new RNCViewPagerPackage(),
       new RNCameraPackage(),
+      new FastImageViewPackage(),
       new RNGestureHandlerPackage(),
       new RNPermissionsPackage(),
       new ReanimatedPackage(),

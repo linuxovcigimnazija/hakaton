@@ -12,6 +12,7 @@ MERGED from [:react-native-camera] C:\Users\User\Desktop\React Native\Ecommerce\
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\febe30baec40259f393816dbd7e82a5e\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-community_masked-view] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_viewpager] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\@react-native-community\viewpager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-fast-image] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-fast-image\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-permissions] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-reanimated] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
@@ -48,6 +49,8 @@ MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\User\.gradle\caches\tr
 MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2f1ab5177402cfea2e7d5f190a0d3272\soloader-0.9.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4fc9edd97bdb4d841f273730f55ff5b8\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9f42ebdec41b17d6a955acb45dba5c67\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:2:1-16:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f6d9d6a861bcba69fcb2e0d77f069006\glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f45c040a4a0af8b7b85e0c8a75aba788\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\fd1117b12f395cb0558fe2670c1c186f\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3bfc1c7eec0c13314b2d24928d9ddf39\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -69,6 +72,7 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\User\.gradle
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f2dc6dae03dd8b5e4f606d607d6971ad\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\877ff2614da090610c4548c4a67f846d\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\70aa37e599f746c69238138f944c9bc9\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b2c327fe17ebeaf55e887aeb9ffeaf7d\gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b2114ee814ed08f46700e3cf35004c9\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2cb884fe954753715841cfff8e6e7259\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\cdf6a1e5f9477a138e7acd96d7e24701\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
@@ -155,8 +159,14 @@ MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\User\.gradle\caches\
 MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2f1ab5177402cfea2e7d5f190a0d3272\soloader-0.9.0\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4fc9edd97bdb4d841f273730f55ff5b8\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4fc9edd97bdb4d841f273730f55ff5b8\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:10:5-14:19
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:10:5-14:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f6d9d6a861bcba69fcb2e0d77f069006\glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f6d9d6a861bcba69fcb2e0d77f069006\glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\877ff2614da090610c4548c4a67f846d\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\877ff2614da090610c4548c4a67f846d\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b2c327fe17ebeaf55e887aeb9ffeaf7d\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b2c327fe17ebeaf55e887aeb9ffeaf7d\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b2114ee814ed08f46700e3cf35004c9\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b2114ee814ed08f46700e3cf35004c9\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
@@ -231,6 +241,8 @@ MERGED from [:react-native-community_masked-view] C:\Users\User\Desktop\React Na
 MERGED from [:react-native-community_masked-view] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_viewpager] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\@react-native-community\viewpager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_viewpager] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\@react-native-community\viewpager\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fast-image] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-fast-image\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fast-image] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-fast-image\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-permissions] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-permissions\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -303,6 +315,10 @@ MERGED from [com.google.android.material:material:1.1.0] C:\Users\User\.gradle\c
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4fc9edd97bdb4d841f273730f55ff5b8\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9f42ebdec41b17d6a955acb45dba5c67\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9f42ebdec41b17d6a955acb45dba5c67\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f6d9d6a861bcba69fcb2e0d77f069006\glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f6d9d6a861bcba69fcb2e0d77f069006\glide-4.11.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f45c040a4a0af8b7b85e0c8a75aba788\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f45c040a4a0af8b7b85e0c8a75aba788\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\fd1117b12f395cb0558fe2670c1c186f\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -345,6 +361,8 @@ MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\877ff2614da090610c4548c4a67f846d\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\70aa37e599f746c69238138f944c9bc9\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\70aa37e599f746c69238138f944c9bc9\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b2c327fe17ebeaf55e887aeb9ffeaf7d\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b2c327fe17ebeaf55e887aeb9ffeaf7d\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b2114ee814ed08f46700e3cf35004c9\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b2114ee814ed08f46700e3cf35004c9\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2cb884fe954753715841cfff8e6e7259\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
@@ -415,3 +433,9 @@ ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\
 		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+meta-data#com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+ADDED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:11:9-13:43
+	android:value
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:13:13-40
+	android:name
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:12:13-84

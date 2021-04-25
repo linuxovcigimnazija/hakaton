@@ -108,6 +108,12 @@
 57-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
 58            android:value="@integer/google_play_services_version" />
 58-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-59    </application>
-60
-61</manifest>
+59        <meta-data
+59-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:11:9-13:43
+60            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+60-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:12:13-84
+61            android:value="GlideModule" />
+61-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e64ed4ba9bddc416d75714bfa15c8788\okhttp3-integration-4.11.0\AndroidManifest.xml:13:13-40
+62    </application>
+63
+64</manifest>

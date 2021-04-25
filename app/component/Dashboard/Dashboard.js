@@ -72,6 +72,7 @@ const Dashboard = ({navigation, props, route}) => {
               }}>
               <Image
                 resizeMode="contain"
+                fadeDuration={0}
                 style={{height: 55, zIndex: 0}}
                 source={require('assets/added/logo-header.png')}
               />

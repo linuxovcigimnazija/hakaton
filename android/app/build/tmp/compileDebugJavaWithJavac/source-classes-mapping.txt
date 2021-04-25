@@ -340,6 +340,18 @@ androidx/media/R.java
  androidx.media.R$styleable
 androidx/lifecycle/viewmodel/R.java
  androidx.lifecycle.viewmodel.R
+com/bumptech/glide/R.java
+ com.bumptech.glide.R
+ com.bumptech.glide.R$attr
+ com.bumptech.glide.R$color
+ com.bumptech.glide.R$dimen
+ com.bumptech.glide.R$drawable
+ com.bumptech.glide.R$id
+ com.bumptech.glide.R$integer
+ com.bumptech.glide.R$layout
+ com.bumptech.glide.R$string
+ com.bumptech.glide.R$style
+ com.bumptech.glide.R$styleable
 androidx/legacy/v4/R.java
  androidx.legacy.v4.R
  androidx.legacy.v4.R$attr
@@ -352,6 +364,8 @@ androidx/legacy/v4/R.java
  androidx.legacy.v4.R$string
  androidx.legacy.v4.R$style
  androidx.legacy.v4.R$styleable
+com/bumptech/glide/gifdecoder/R.java
+ com.bumptech.glide.gifdecoder.R
 com/swmansion/rnscreens/R.java
  com.swmansion.rnscreens.R
  com.swmansion.rnscreens.R$anim
@@ -449,6 +463,18 @@ androidx/appcompat/R.java
  androidx.appcompat.R$styleable
 androidx/lifecycle/livedata/R.java
  androidx.lifecycle.livedata.R
+com/bumptech/glide/integration/okhttp/R.java
+ com.bumptech.glide.integration.okhttp.R
+ com.bumptech.glide.integration.okhttp.R$attr
+ com.bumptech.glide.integration.okhttp.R$color
+ com.bumptech.glide.integration.okhttp.R$dimen
+ com.bumptech.glide.integration.okhttp.R$drawable
+ com.bumptech.glide.integration.okhttp.R$id
+ com.bumptech.glide.integration.okhttp.R$integer
+ com.bumptech.glide.integration.okhttp.R$layout
+ com.bumptech.glide.integration.okhttp.R$string
+ com.bumptech.glide.integration.okhttp.R$style
+ com.bumptech.glide.integration.okhttp.R$styleable
 androidx/legacy/coreui/R.java
  androidx.legacy.coreui.R
  androidx.legacy.coreui.R$attr
@@ -656,6 +682,21 @@ com/facebook/nativeimagetranscoder/R.java
  com.facebook.nativeimagetranscoder.R$string
  com.facebook.nativeimagetranscoder.R$style
  com.facebook.nativeimagetranscoder.R$styleable
+com/dylanvann/fastimage/R.java
+ com.dylanvann.fastimage.R
+ com.dylanvann.fastimage.R$anim
+ com.dylanvann.fastimage.R$attr
+ com.dylanvann.fastimage.R$bool
+ com.dylanvann.fastimage.R$color
+ com.dylanvann.fastimage.R$dimen
+ com.dylanvann.fastimage.R$drawable
+ com.dylanvann.fastimage.R$id
+ com.dylanvann.fastimage.R$integer
+ com.dylanvann.fastimage.R$layout
+ com.dylanvann.fastimage.R$string
+ com.dylanvann.fastimage.R$style
+ com.dylanvann.fastimage.R$styleable
+ com.dylanvann.fastimage.R$xml
 com/reactnativecommunity/viewpager/R.java
  com.reactnativecommunity.viewpager.R
  com.reactnativecommunity.viewpager.R$anim
