@@ -23,7 +23,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 const LATTES = 3;
 const max = 3;
 const percentage = ((LATTES / max) * 100).toFixed();
-const couponEnabled = LATTES >= max ? true : false;
+const couponEnabled = LATTES >= max ? false : true;
 
 const points = 40;
 const maxPoints = 150;
