@@ -105,7 +105,8 @@ const Dashboard = ({navigation, props}) => {
                   justifyContent: 'center',
                 }}>
                 <Text style={styles.percentage}>
-                  25<Text style={{fontSize: 20}}>%</Text>
+                  {point / 1.5}
+                  <Text style={{fontSize: 20}}>%</Text>
                 </Text>
               </View>
             </View>
@@ -162,7 +163,8 @@ const Dashboard = ({navigation, props}) => {
                       color: '#94553a',
                     },
                   ]}>
-                  33<Text style={{fontSize: 20}}>%</Text>
+                  {latte / 0.03}
+                  <Text style={{fontSize: 20}}>%</Text>
                 </Text>
               </View>
             </View>
