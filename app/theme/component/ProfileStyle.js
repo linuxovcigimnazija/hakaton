@@ -13,14 +13,21 @@ const profileStyle = StyleSheet.create({
         backgroundColor: Colors.darkbrown,
         marginHorizontal: 10,
         marginTop: 15,
-        height: 330,
+        height: 340,
+        justifyContent: 'space-between',
         borderRadius: 20,
         overflow: 'hidden'
     },
     scoreView: {
         flexDirection: 'row',
-        width: '100%',
-        justifyContent: 'flex-start'
+        width: '95%',
+        height: 60,
+        marginTop: 20,
+        marginHorizontal: 10,
+        backgroundColor: 'white',
+        borderRadius: 15,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     trophyView: {        
         flexDirection: 'row',
@@ -51,12 +58,12 @@ const profileStyle = StyleSheet.create({
         shadowOffset: { width: 0, height: 0 },
         shadowOpacity: 0.5,
         shadowRadius: 2,
-        elevation: 5,
-        shadowColor: 'rgba(0,0,0, .4)',
+        elevation: 8,
+        shadowColor: 'rgba(0,0,0, .5)',
         backgroundColor: 'white',
         alignSelf: 'center',
-        width: BaseStyle.DEVICE_WIDTH / 100 * 85,
-        paddingHorizontal: 25,
+        width: BaseStyle.DEVICE_WIDTH / 100 * 90,
+        paddingHorizontal: 16,
         alignItems: 'center',
         flexDirection: 'row',
         marginBottom: 15,
@@ -67,9 +74,6 @@ const profileStyle = StyleSheet.create({
         resizeMode: 'contain',
     },
     settingtextStyle: {
-        fontSize: 14,
-        color: Colors.activebtn,
-        paddingLeft: 20,
         fontFamily: ENV.qfontFamilyBold
     }
 })

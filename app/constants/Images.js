@@ -33,7 +33,7 @@ const Images = {
     deActiveProfile: require('assets/TabIcon/deActiveProfile.png'),
     tabUserprofile: require('assets/TabIcon/icon_profile.png'),
     trophy: require('assets/TabIcon/trophy4.png'),
-
+    
     //Dashboard
     women: require('assets/Dashboard/women.png'),
     fooddrink: require('assets/Dashboard/fooddrink.png'),
@@ -64,6 +64,10 @@ const Images = {
     favourites: require('assets/ProfileIcon/favourites.png'),
     account: require('assets/ProfileIcon/account.png'),
     profileCover: require('assets/ProfileIcon/blackprofile_background.jpeg'),
+    kapucino: require('assets/ProfileIcon/kapucino.png'),
+    makijato: require('assets/ProfileIcon/makijato.png'),
+    espreso: require('assets/ProfileIcon/espreso.png'),
+    frape: require('assets/ProfileIcon/frape.png'),
 
     //Check Box
     checkbox: require('assets/CheckOut/checkbox.png'),

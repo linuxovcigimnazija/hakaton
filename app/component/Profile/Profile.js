@@ -16,11 +16,10 @@ import ENV from 'env/index';
 const Profile = ({ navigation, props }) => {
 
     const ProfileSettingDataList = [
-        { id: 1, title: 'Account', img: Images.account },
-        { id: 2, title: 'My Address', img: Images.address },
-        { id: 3, title: 'My Order', img: Images.order },
-        { id: 4, title: 'My Favourites', img: Images.favourites },
-        { id: 5, title: 'Payment', img: Images.payment }
+        { id: 1, title: 'Espreso radoholičar', img: Images.espreso, number: '2 / 10 espresa' },
+        { id: 2, title: 'Kapućino hedonista', img: Images.kapucino, number: '5 / 10 kapućina' },
+        { id: 3, title: 'Makijato cooler', img: Images.makijato, number: '7 / 10 makijata' },
+        { id: 4, title: 'Frape sanjar', img: Images.frape, number: '2 / 10 frapea' },
 
     ]
 
@@ -52,15 +51,15 @@ const Profile = ({ navigation, props }) => {
                         <RLText
                             text={'Tvoj rezultat:'}
                             RlnumberOfLines={1}
-                            style={[textStyle.textWidthStyle, textStyle.userNameTextStyle, { textALignVertical: 'center', flex: 0.5, fontSize: 24, fontFamily: ENV.nfontFamilyBold }]} />
+                            style={[textStyle.textWidthStyle, textStyle.userNameTextStyle, { color: Colors.darkbrown, textALignVertical: 'center', flex: 0.5, fontSize: 26, fontFamily: ENV.nfontFamilyBold, marginLeft: 5 }]} />
                         <View style={profileStyle.trophyView}>
                             <RLText
                                 text={'4000'}
                                 RlnumberOfLines={1}
-                                style={[textStyle.textWidthStyle, textStyle.userNameTextStyle, { fontSize: 28, fontFamily: ENV.nfontFamilyRegular }]} />             
+                                style={[textStyle.textWidthStyle, textStyle.userNameTextStyle, { color: Colors.darkbrown, fontSize: 30, fontFamily: ENV.nfontFamilyRegular }]} />             
                             <Image
                                 source={Images.trophy}
-                                style={{ width: 5, height: 8, resizeMode: 'contain' }}/>
+                                style={{  width: 50, height: 70, resizeMode: 'contain' }}/>
                         </View>
                     </View>
                 </ImageBackground>
@@ -85,6 +84,7 @@ const Profile = ({ navigation, props }) => {
             <RLProfileSettingList
                 settingicons={item.img}
                 title={item.title}
+                number={item.number}
                 marginTop={index == 0 ? 3 : 0}
             // onPress={() => alert(item.title)}
             />

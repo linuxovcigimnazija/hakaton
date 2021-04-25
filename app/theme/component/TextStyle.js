@@ -18,7 +18,6 @@ const textStyle = StyleSheet.create({
         fontFamily: ENV.qfontFamilyBold
     },
     textWidthStyle: {
-        width: BaseStyle.DEVICE_WIDTH / 100 * 85,
         alignSelf: 'center'
     },
     forgettextStyle: {
@@ -52,9 +51,7 @@ const textStyle = StyleSheet.create({
         color: Colors.white,
         textAlign: 'center',
         fontWeight: 'bold',
-        textAlignVertical: 'center',
-        textAlign: 'center',
-        alignSelf: 'center'
+        textAlignVertical: 'center'
     },
     titleHeaderTextStyle: {
         color: Colors.gray1,
