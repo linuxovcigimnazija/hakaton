@@ -65,13 +65,14 @@ const Dashboard = ({navigation, props, route}) => {
               style={{
                 flex: 1,
                 width: '100%',
-                alignItems: 'flex-end',
-                justifyContent: 'center',
+                alignItems: 'center',
+                justifyContent: 'flex-end',
                 marginLeft: 65,
+                flexDirection: 'row',
               }}>
               <Image
                 resizeMode="contain"
-                style={{height: 55}}
+                style={{height: 55, zIndex: 0}}
                 source={require('assets/added/logo-header.png')}
               />
             </View>
