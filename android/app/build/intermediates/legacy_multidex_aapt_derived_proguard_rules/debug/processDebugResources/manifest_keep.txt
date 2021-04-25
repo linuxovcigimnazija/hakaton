@@ -1,0 +1,4 @@
+# Referenced at F:\Ecommerce\android\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:24
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at F:\Ecommerce\android\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:24
+-keep class com.ecommerce.MainApplication { <init>(); }
