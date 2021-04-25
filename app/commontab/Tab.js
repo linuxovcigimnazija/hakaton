@@ -25,7 +25,7 @@ const Tab = ({
       {icon && (
         <FontAwesome
           name={iconName}
-          size={26}
+          size={selected === 'Notification' ? 38 : 26}
           color={selected ? '#94553a' : '#cab09d'}
         />
       )}

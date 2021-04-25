@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-native/no-inline-styles */
 import React, {Fragment, useEffect, useState} from 'react';
 import {
@@ -55,161 +56,215 @@ const Dashboard = ({navigation, props}) => {
                 width: '100%',
                 alignItems: 'flex-end',
                 justifyContent: 'center',
+                marginLeft: 65,
               }}>
               <Image
                 resizeMode="contain"
-                style={{height: 27}}
+                style={{height: 55}}
                 source={require('assets/added/logo-header.png')}
               />
             </View>
           </View>
-          <View style={styles.body}>
-            <View style={[styles.card, {backgroundColor: '#cab09d'}]}>
-              <View
-                style={{
-                  flex: 2,
-                  justifyContent: 'center',
-                  marginLeft: 15,
-                }}>
+          <ScrollView style={{}}>
+            <View style={styles.body}>
+              <View style={[styles.card, {backgroundColor: '#cab09d'}]}>
                 <View
                   style={{
-                    flex: 1,
-                    justifyContent: 'space-between',
-                    paddingHorizontal: 5,
-                    flexDirection: 'row',
-                    alignItems: 'flex-end',
-                    marginTop: 10,
-                    width: '90%',
+                    flex: 2,
+                    justifyContent: 'center',
+                    marginLeft: 15,
                   }}>
-                  <View style={styles.imageContainer}>
-                    <Feather name="coffee" size={50} color={'#94553a'} />
+                  <View
+                    style={{
+                      flex: 1,
+                      justifyContent: 'space-between',
+                      paddingHorizontal: 5,
+                      flexDirection: 'row',
+                      alignItems: 'flex-end',
+                      marginTop: 10,
+                      width: '90%',
+                    }}>
+                    <View style={styles.imageContainer}>
+                      <Feather name="coffee" size={50} color={'#94553a'} />
+                    </View>
+                    <Text style={styles.number}>
+                      40<Text style={{fontSize: 22}}> / </Text>150
+                    </Text>
                   </View>
-                  <Text style={styles.number}>
-                    40<Text style={{fontSize: 22}}> / </Text>150
-                  </Text>
+                  <View style={{flex: 1, alignItems: 'center'}}>
+                    <Text style={styles.textStyle}>
+                      Besplatna kafa te čeka! Skeniraj QR kod na šolji.
+                    </Text>
+                  </View>
                 </View>
-                <View style={{flex: 1, alignItems: 'center'}}>
-                  <Text style={styles.textStyle}>
-                    Besplatna kafa te čeka! Skeniraj QR kod na šolji.
-                  </Text>
-                </View>
-              </View>
-              <View
-                style={{
-                  flex: 1,
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}>
-                <Text style={styles.percentage}>
-                  27<Text style={{fontSize: 20}}>%</Text>
-                </Text>
-              </View>
-            </View>
-
-            <View
-              style={[
-                styles.card,
-                {backgroundColor: '#94553a', marginBottom: 0},
-              ]}>
-              <View
-                style={{
-                  flex: 2,
-                  justifyContent: 'center',
-                  marginLeft: 15,
-                }}>
                 <View
                   style={{
                     flex: 1,
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}>
-                  <Text style={styles.titleStyle}>Sedmični izazov:</Text>
-                  <Text style={styles.subtitleStyle}>Skeniraj 3 Latte-a</Text>
+                  <Text style={styles.percentage}>
+                    27<Text style={{fontSize: 20}}>%</Text>
+                  </Text>
+                </View>
+              </View>
+
+              <View
+                style={[
+                  styles.card,
+                  {backgroundColor: '#94553a', marginBottom: 0},
+                ]}>
+                <View
+                  style={{
+                    flex: 2,
+                    justifyContent: 'center',
+                    marginLeft: 15,
+                  }}>
+                  <View
+                    style={{
+                      flex: 1,
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}>
+                    <Text style={styles.titleStyle}>Sedmični izazov:</Text>
+                    <Text style={styles.subtitleStyle}>Skeniraj 3 Latte-a</Text>
+                  </View>
+                  <View
+                    style={{
+                      flex: 1,
+                      justifyContent: 'flex-start',
+                      width: '80%',
+                      paddingHorizontal: 5,
+                      flexDirection: 'row',
+                      marginBottom: 10,
+                    }}>
+                    <View style={[styles.imageContainer]}>
+                      <Ionicon name="timer" size={50} color={'#cab09d'} />
+                    </View>
+                    <Text style={styles.number}>
+                      1<Text style={{fontSize: 22}}> / </Text>3
+                    </Text>
+                  </View>
                 </View>
                 <View
                   style={{
                     flex: 1,
-                    justifyContent: 'flex-start',
-                    width: '80%',
-                    paddingHorizontal: 5,
-                    flexDirection: 'row',
-                    marginBottom: 10,
+                    alignItems: 'center',
+                    justifyContent: 'center',
                   }}>
-                  <View style={[styles.imageContainer]}>
-                    <Ionicon name="timer" size={50} color={'#cab09d'} />
-                  </View>
-                  <Text style={styles.number}>
-                    1<Text style={{fontSize: 22}}> / </Text>3
+                  <Text
+                    style={[
+                      styles.percentage,
+                      {
+                        backgroundColor: '#cab09d',
+                        color: '#94553a',
+                      },
+                    ]}>
+                    33<Text style={{fontSize: 20}}>%</Text>
                   </Text>
                 </View>
               </View>
-              <View
-                style={{
-                  flex: 1,
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}>
-                <Text
-                  style={[
-                    styles.percentage,
-                    {
-                      backgroundColor: '#cab09d',
-                      color: '#94553a',
-                    },
-                  ]}>
-                  33<Text style={{fontSize: 20}}>%</Text>
+              <View style={styles.reward}>
+                <Text style={styles.textStyle}>
+                  Nagrada:{' '}
+                  <Text style={{color: '#555555'}}>
+                    Kupon za besplatan Latte
+                  </Text>
                 </Text>
               </View>
-            </View>
-            <View style={styles.reward}>
-              <Text style={styles.textStyle}>
-                Nagrada:{' '}
-                <Text style={{color: '#555555'}}>Kupon za besplatan Latte</Text>
-              </Text>
-            </View>
 
-            <TouchableOpacity
-              activeOpacity={0.9}
-              onPress={() => onCouponPress()}
-              style={[
-                styles.card,
-                {
-                  backgroundColor: '#7cc269',
-                  height: '35%',
-                  padding: 15,
+              <TouchableOpacity
+                activeOpacity={0.9}
+                onPress={() => onCouponPress()}
+                style={[
+                  styles.card,
+                  {
+                    backgroundColor: '#7cc269',
+                    height: 220,
+                    padding: 15,
+                    flexDirection: 'column',
+                  },
+                ]}>
+                <FontAwesome
+                  name="star"
+                  color="#ffffff"
+                  size={36}
+                  style={{top: 15, right: 20, position: 'absolute'}}
+                />
+                <Text
+                  style={{fontWeight: 'bold', fontSize: 30, color: 'white'}}>
+                  Preuzmi kupon!
+                </Text>
+                <Text
+                  style={{
+                    fontFamily: 'Nunito-Bold',
+                    color: 'white',
+                    marginTop: 20,
+                    fontSize: 20,
+                  }}>
+                  20% popusta na SVE kafe!{'\n'}Šta čekaš? Kreni odmah u svoju
+                  omiljenu pržionicu kafe!
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 30,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    bottom: 10,
+                    right: 15,
+                    position: 'absolute',
+                  }}>{`${hours}:${minutes}:${displaySecond}`}</Text>
+              </TouchableOpacity>
+
+              <View
+                style={{
+                  marginBottom: 15,
+                  borderRadius: 15,
+                  elevation: 3,
+                  padding: 5,
+                  backgroundColor: '#cab09d',
+                  paddingHorizontal: 15,
+                  paddingVertical: 10,
                   flexDirection: 'column',
-                },
-              ]}>
-              <FontAwesome
-                name="star"
-                color="#ffffff"
-                size={36}
-                style={{top: 15, right: 20, position: 'absolute'}}
-              />
-              <Text style={{fontWeight: 'bold', fontSize: 30, color: 'white'}}>
-                Preuzmi kupon!
-              </Text>
-              <Text
-                style={{
-                  fontFamily: 'Nunito-Bold',
-                  color: 'white',
-                  marginTop: 20,
-                  fontSize: 20,
                 }}>
-                20% popusta na SVE kafe!{'\n'}Šta čekaš? Kreni odmah u svoju
-                omiljenu pržionicu kafe!
-              </Text>
-              <Text
-                style={{
-                  fontSize: 30,
-                  fontWeight: 'bold',
-                  color: 'white',
-                  bottom: 10,
-                  right: 15,
-                  position: 'absolute',
-                }}>{`${hours}:${minutes}:${displaySecond}`}</Text>
-            </TouchableOpacity>
-          </View>
+                <Text
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: 22,
+                    color: 'white',
+                    marginBottom: 10,
+                  }}>
+                  Koji od ponuđenih blendova niste probali?
+                </Text>
+                <View style={styles.answer}>
+                  <Text style={styles.answerText}>Blend I</Text>
+                  <Text style={styles.answerPercentage}>25%</Text>
+                </View>
+
+                <View style={styles.answer}>
+                  <Text style={styles.answerText}>Blend II</Text>
+                  <Text style={styles.answerPercentage}>15%</Text>
+                </View>
+
+                <View style={styles.answer}>
+                  <Text style={styles.answerText}>Blend III</Text>
+                  <Text style={styles.answerPercentage}>18%</Text>
+                </View>
+
+                <View style={[styles.answer, {backgroundColor: '#94553aB0'}]}>
+                  <Text style={styles.answerText}>Blend IV</Text>
+                  <Text style={[styles.answerPercentage, {color: 'white'}]}>
+                    29%
+                  </Text>
+                </View>
+
+                <View style={styles.answer}>
+                  <Text style={styles.answerText}>Blend V</Text>
+                  <Text style={styles.answerPercentage}>13%</Text>
+                </View>
+              </View>
+            </View>
+          </ScrollView>
         </View>
       </Fragment>
 
@@ -280,7 +335,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   card: {
-    height: '22%',
+    height: 140,
     marginBottom: 15,
     borderRadius: 15,
     elevation: 3,
@@ -313,7 +368,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     alignSelf: 'center',
     fontWeight: 'bold',
-    fontStyle: 'italic',
+    // fontStyle: 'italic',
     color: 'white',
   },
   titleStyle: {
@@ -332,13 +387,34 @@ const styles = StyleSheet.create({
   },
   reward: {
     backgroundColor: '#cab09d',
-    marginTop: '-5%',
+    marginTop: -15,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
     marginBottom: 15,
-    height: '8%',
+    height: 50,
     paddingHorizontal: 15,
     paddingTop: 10,
     justifyContent: 'center',
+  },
+  answer: {
+    width: '100%',
+    borderWidth: 2,
+    borderColor: '#94553a',
+    borderRadius: 5,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
+    marginBottom: 5,
+  },
+  answerText: {
+    color: 'white',
+    fontFamily: 'Nunito-Bold',
+    fontSize: 16,
+  },
+  answerPercentage: {
+    color: '#94553a',
+    fontWeight: 'bold',
+    fontSize: 20,
   },
 });

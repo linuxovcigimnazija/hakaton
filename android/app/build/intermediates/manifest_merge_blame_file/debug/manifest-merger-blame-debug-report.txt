@@ -47,7 +47,7 @@
 25-->[:react-native-camera] C:\Users\User\Desktop\React Native\Ecommerce\node_modules\react-native-camera\android\build\intermediates\library_manifest\generalDebug\AndroidManifest.xml:16:9-33
 26
 27    <application
-27-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:11:5-30:19
+27-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:11:5-31:19
 28        android:name="com.ecommerce.MainApplication"
 28-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:12:7-38
 29        android:allowBackup="false"
@@ -66,46 +66,48 @@
 36        android:usesCleartextTraffic="true" >
 36-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\debug\AndroidManifest.xml:7:18-53
 37        <activity
-37-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:18:7-28:18
+37-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:18:7-29:18
 38            android:name="com.ecommerce.MainActivity"
-38-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:19:9-37
+38-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:20:9-37
 39            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-39-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:21:9-86
+39-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:22:9-86
 40            android:label="@string/app_name"
-40-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:20:9-41
+40-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:21:9-41
 41            android:launchMode="singleTask"
-41-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:22:9-40
-42            android:windowSoftInputMode="adjustResize" >
-42-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:23:9-51
-43            <intent-filter>
-43-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:24:9-27:25
-44                <action android:name="android.intent.action.MAIN" />
-44-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:25:13-65
-44-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:25:21-62
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:26:13-73
-46-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:26:23-70
-47            </intent-filter>
-48        </activity>
-49        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-49-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:29:7-84
-49-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:29:17-81
-50        <activity
-50-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-51            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-51-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-52            android:exported="false"
-52-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-53            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-53-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-54
-55        <meta-data
-55-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-56            android:name="com.google.android.gms.version"
-56-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-57            android:value="@integer/google_play_services_version" />
-57-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-58    </application>
-59
-60</manifest>
+41-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:23:9-40
+42            android:screenOrientation="portrait"
+42-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:19:9-45
+43            android:windowSoftInputMode="adjustResize" >
+43-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:24:9-51
+44            <intent-filter>
+44-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:25:9-28:25
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:26:13-65
+45-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:26:21-62
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:27:13-73
+47-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:27:23-70
+48            </intent-filter>
+49        </activity>
+50        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+50-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:30:7-84
+50-->C:\Users\User\Desktop\React Native\Ecommerce\android\app\src\main\AndroidManifest.xml:30:17-81
+51        <activity
+51-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+52            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+52-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+53            android:exported="false"
+53-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+54            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+54-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7ac97122adc3388169a0fc80e12d1401\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+55
+56        <meta-data
+56-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+57            android:name="com.google.android.gms.version"
+57-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+58            android:value="@integer/google_play_services_version" />
+58-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d1902cc5bfd63478f51acb59b0eb03e6\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+59    </application>
+60
+61</manifest>
